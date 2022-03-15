@@ -115,7 +115,7 @@ module.exports = {
 	},
 	AllowsSecurity: {
 		extract: (item) => !!getBPRules(item)?.AllowsSecurity,
-		permissions: ['ADMIN'],
+		permissions: ['ADMIN','WRITE'],
 	},
 	DismissesStaleReviews: {
 		extract: (item) => !!getBPRules(item)?.dismissesStaleReviews,
