@@ -113,10 +113,6 @@ module.exports = {
 		extract: (item) => !!getBPRules(item)?.allowsDeletions,
 		permissions: ['ADMIN'],
 	},
-	AllowsSecurity: {
-		extract: (item) => !!getBPRules(item)?.allowsSecurity,
-		permissions: ['ADMIN','WRITE'],
-	},
 	DismissesStaleReviews: {
 		extract: (item) => !!getBPRules(item)?.dismissesStaleReviews,
 		permissions: ['ADMIN'],
