@@ -15,6 +15,7 @@ const metrics = [
 	{ name: 'Access', extract: (item) => item.viewerPermission },
 	{ name: 'DefBranch', extract: (item) => (item.defaultBranchRef || {}).name || '---' },
 	{ name: 'isPrivate', extract: (item) => item.isPrivate, dontPrint: true },
+	{ name: 'SecurityPolicyEnabled', extract: (item) => item.SecurityPolicyEnabled, dontPrint: true },
 ];
 
 test('generateDetailTable,', (t) => {
